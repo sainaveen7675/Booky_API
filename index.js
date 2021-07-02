@@ -41,6 +41,28 @@ booky.get("/is/:isbn", (req, res) => {
 });
 
 /*
+Route         /la
+Description   Get list of books based on languages
+Access        Public
+Parameter     language
+Methods       GET
+*/
+booky.get("/la/:language", (req, res) => {
+  const getSpecificBook = database.books.filter(
+  (book) => book.language.includes(req.params.language)
+  );
+
+  if (getSpecificBook.length === 0) {
+    return res.json({
+      error: `No book found for the language of ${req.params.language}`,
+    });
+  }
+
+  return res.json({ book: getSpecificBook });
+});
+
+
+/*
 Route         /c
 Description   Get specific book based on category
 Access        Public
@@ -73,6 +95,28 @@ booky.get("/author", (req, res) => {
 });
 
 /*
+Route         /author
+Description   Get specific authors 
+Access        Public
+Parameter     name
+Methods       GET
+*/
+
+booky.get("/author/:name", (req, res) => {
+  const getSpecificAuthor = database.author.filter(
+    (author) => author.name.includes(req.params.name)
+    );
+  
+    if (getSpecificAuthor.length === 0) {
+      return res.json({
+        error: `No author found for the name of ${req.params.name}`,
+      });
+    }
+  
+    return res.json({ author: getSpecificAuthor });
+})
+
+/*
 Route         /author/book
 Description   Get all authors based on books
 Access        Public
@@ -103,5 +147,48 @@ Methods       GET
 booky.get("/publications", (req, res) => {
   return res.json({ publications: database.publication});
 });
+
+/*
+Route         /publications
+Description   Get specific publication 
+Access        Public
+Parameter     name
+Methods       GET
+*/
+booky.get("/publications/:name", (req, res) => {
+  const getSpecificpublication = database.publication.filter(
+    (publications) => publications.name.includes(req.params.name)
+    );
+  
+    if (getSpecificpublication.length === 0) {
+      return res.json({
+        error: `No publication found for the name of ${req.params.name}`,
+      });
+    }
+  
+    return res.json({ publications: getSpecificpublication });
+})
+
+/*
+Route         /publications/books
+Description   Get list of publications based on book 
+Access        Public
+Parameter     isbn
+Methods       GET
+*/
+booky.get("/publications/books/:isbn", (req, res) => {
+  const getSpecificpublication = database.publication.filter(
+    (publications) => publications.books.includes(req.params.isbn)
+    );
+  
+    if (getSpecificpublication.length === 0) {
+      return res.json({
+        error: `No publication found for the book of ${req.params.isbn}`,
+      });
+    }
+  
+    return res.json({ publications: getSpecificpublication });
+})
+
 
 booky.listen(3000, () => console.log("HEy server is running! 😎"));
