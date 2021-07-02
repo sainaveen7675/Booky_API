@@ -9,26 +9,26 @@ const books = [
       publications: [1],
       category: ["tech", "programming", "education", "thriller"],
     },
-  ];
+];
   
-  const author = [
+const author = [
     {
       id: 1,
       name: "Sainaveen",
-      books: ["12345Book"],
+      books: ["12345Book", "1234566789Secret"],
     },
     { id: 2,
       name: "Elon Musk", 
-      books: ["12345Book", "1234566789Secret"]
+      books: ["12345Book"]
     },
-  ];
+];
   
-  const publication = [
+const publication = [
     {
       id: 1,
       name: "writex",
       books: ["12345Book"],
     },
-  ];
+];
 
-  module.exports = {books, author, publication};
+module.exports = {books, author, publication};
