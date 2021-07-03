@@ -49,7 +49,7 @@
 // Add new author.........[done]
 
 // PUT
-// Update author name[TASK]
+// Update author name[TASK]........[done]
 
 // DETELE
 // Delete an author
@@ -63,10 +63,10 @@
 // to get list of publications based on book [TASK]............[done]
 
 // POST
-// Add new publications [TASK]
+// Add new publications [TASK].........[done]
 
 // PUT
-// Update the publication name[TASK]
+// Update the publication name[TASK]..........[done]
 // Update/add books to publications
 
 // DELETE

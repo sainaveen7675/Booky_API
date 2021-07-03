@@ -262,12 +262,52 @@ booky.put("/book/update/author/:isbn/:authorId", (req, res) => {
 });
 
 /*
-Route         /book/update/author
-Description   Update/add new author for the book
+Route         /author/update/name/
+Description   Update author name
 Access        Public
-Parameter     ISBN
+Parameter     id
 Methods       PUT
 */
+booky.put("/author/update/name/:id", (req, res) => {
+  database.author.forEach((author) => {
+    if (author.id === parseInt(req.params.id)) {
+      author.name = req.body.newAuthorName;
+      return;
+    }
+  });
 
+  return res.json({ author: database.author });
+});
 
-booky.listen(3000, () => console.log("HEy server is running!"));
+/*
+Route         /publication/add
+Description   Add new publications
+Access        Public
+Parameter     None
+Methods       POST
+*/
+booky.post("/publication/add", (req, res) => {
+  const { newPublication } = req.body;
+  database.publication.push(newPublication);
+  return res.json({ publications: database.publication });
+});
+
+/*
+Route         /publication/update/name/
+Description   Update the publication name
+Access        Public
+Parameter     id
+Methods       PUT
+*/
+booky.put("/publication/update/name/:id", (req, res) => {
+  database.publication.forEach((publication) => {
+    if (publication.id === parseInt(req.params.id)) {
+      publication.name = req.body.newPublicationName;
+      return;
+    }
+  });
+
+  return res.json({ publication: database.publication });
+});
+
+booky.listen(3000, () => console.log("Hey server is running!"));

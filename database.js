@@ -19,7 +19,7 @@ const author = [
     },
     { id: 2,
       name: "Elon Musk", 
-      books: ["12345Book"]
+      books: ["12345Book"],
     },
 ];
   
