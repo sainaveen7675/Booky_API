@@ -16,7 +16,10 @@
 
 // What are all the APIs that we need........
 
+//------------------------------------------------------------------------------------------
+
 // **Books**
+
 // We need an API
 
 // GET
@@ -33,11 +36,13 @@
 // Update/add new author for a book.......[done]
 
 // DELETE
-// Delete a book
-// Delete an author
+// Delete a book..........[done]
+// Delete an author from the book.......[done]
 
+//---------------------------------------------------------------------------
 
 // **Authors**
+
 // We need an API
 
 // GET
@@ -52,9 +57,12 @@
 // Update author name[TASK]........[done]
 
 // DETELE
-// Delete an author
+// Delete an author[TASK]........[done]
+
+//------------------------------------------------------------------------------------------------
 
 // **Publications**
+
 // We need an API
 
 // GET
@@ -67,8 +75,8 @@
 
 // PUT
 // Update the publication name[TASK]..........[done]
-// Update/add books to publications
+// Update/add books to publications...........[done]
 
 // DELETE
-// Delete the publication
-// Delete a book from publication
+// Delete the publication[TASK]...........[done]
+// Delete a book from publication...........[done]
