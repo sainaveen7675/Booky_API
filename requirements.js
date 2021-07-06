@@ -23,13 +23,13 @@
 // We need an API
 
 // GET
-// to get all books........ [done]
-// to get specific books ......... [done]
-// to get list of books based on category.......[done]
-// to get list of books based on languages [TASK].......[done]
+// to get all books...... [done].....[data done]
+// to get specific books ...... [done]......[data done]
+// to get list of books based on category.....[done]....[data done]
+// to get list of books based on languages [TASK].....[done]...[data done]
 
 // POST
-//Add new book......[done]
+//Add new book......[done]....[data done]
 
 // PUT
 // Update book title.......[done]
@@ -46,12 +46,12 @@
 // We need an API
 
 // GET
-// to get all authors.......[done]
-// to get specific authors [TASK].........[done]
-// to get list of authors based on books.....[done]
+// to get all authors.......[done].....[data done]
+// to get specific authors [TASK]......[done]...[data done]
+// to get list of authors based on books.....[done]...[data done]
 
 // POST
-// Add new author.........[done]
+// Add new author.........[done].....[data done]
 
 // PUT
 // Update author name[TASK]........[done]
@@ -66,12 +66,12 @@
 // We need an API
 
 // GET
-// to get all publication.......[done]
-// to get specific publication [TASK]..........[done]
-// to get list of publications based on book [TASK]............[done]
+// to get all publication.......[done]....[data done]
+// to get specific publication [TASK]..........[done]..[data done]
+// to get list of publications based on book [TASK].....[done]...[data done]
 
 // POST
-// Add new publications [TASK].........[done]
+// Add new publications [TASK].........[done]...[data done]
 
 // PUT
 // Update the publication name[TASK]..........[done]
