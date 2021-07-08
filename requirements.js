@@ -32,12 +32,12 @@
 //Add new book......[done]....[data done]
 
 // PUT
-// Update book title.......[done]
-// Update/add new author for a book.......[done]
+// Update book title.......[done]...[data done]
+// Update/add new author for a book.......[done]....[data done]
 
 // DELETE
-// Delete a book..........[done]
-// Delete an author from the book.......[done]
+// Delete a book.....[done]....[data done]
+// Delete an author from the book.......[done]...[data done]
 
 //---------------------------------------------------------------------------
 
@@ -54,10 +54,10 @@
 // Add new author.........[done].....[data done]
 
 // PUT
-// Update author name[TASK]........[done]
+// Update author name[TASK]........[done]....[data done]
 
 // DETELE
-// Delete an author[TASK]........[done]
+// Delete an author[TASK]........[done].....[data done]
 
 //------------------------------------------------------------------------------------------------
 
@@ -74,9 +74,9 @@
 // Add new publications [TASK].........[done]...[data done]
 
 // PUT
-// Update the publication name[TASK]..........[done]
-// Update/add books to publications...........[done]
+// Update the publication name[TASK].......[done]...[data done]
+// Update/add books to publications........[done]...[data done]
 
 // DELETE
-// Delete the publication[TASK]...........[done]
-// Delete a book from publication...........[done]
+// Delete the publication[TASK].......[done]....[data done]
+// Delete a book from publication.......[done].....[data done]

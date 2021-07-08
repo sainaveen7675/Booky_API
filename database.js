@@ -5,8 +5,8 @@ let books = [
       pubDate: "2021-07-07",
       language: "en",
       numPage: 250,
-      authors: [1, 2],
-      publication: 1,
+      authors: [1],
+      publication: [1],
       category: ["tech", "programming", "education", "thriller"],
     },
     {
@@ -15,8 +15,8 @@ let books = [
       pubDate: "2021-07-07",
       language: "en",
       numPage: 250,
-      authors: [1, 2],
-      publication: 1,
+      authors: [1],
+      publication: [1],
       category: ["tech", "programming", "education", "thriller"],
     },
 ];
